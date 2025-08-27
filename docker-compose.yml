@@ -1,0 +1,14 @@
+
+services:
+  deep-stream-service-1:
+    build:
+      context: ./service
+    container_name: deep-stream-service-1
+    runtime: nvidia
+    stdin_open: true
+    tty: true
+    restart: "no"
+    environment:
+      - SOURCE_URI="RTSP_URL"
+    ports:         
+      - "5000:5000"

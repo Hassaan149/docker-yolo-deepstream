@@ -1,0 +1,12 @@
+[property]
+enable=1
+config-width=800
+config-height=600
+osd-mode=2
+display-font-size=12
+
+[roi-filtering-stream-0]
+enable=1
+roi-DetectionZone=100;100;400;120;500;300;300;450;120;250
+class-id=0;2
+
